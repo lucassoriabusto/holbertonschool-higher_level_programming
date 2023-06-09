@@ -2,4 +2,3 @@
 def print_sorted_dictionary(a_dictionary):
     for n in sorted(a_dictionary):
         print(f"{n}: {a_dictionary.get(n)}")
-
