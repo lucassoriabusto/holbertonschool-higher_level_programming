@@ -51,7 +51,7 @@ class Square:
         """Setter for position attribute."""
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
-        if type(value) != tuple:
+        elif type(value) != tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(value[0] != int) or (value[1] != int):
             raise TypeError("position must be a tuple of 2 positive integers")
