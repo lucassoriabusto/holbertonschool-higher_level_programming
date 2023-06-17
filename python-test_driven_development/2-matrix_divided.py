@@ -5,8 +5,9 @@
 def matrix_divided(matrix, div):
     """Checks if the rows of the matrix have the same size
     and if they are int or float."""
-    if len(matrix[0]) != len(matrix[1]):
-        raise TypeError("Each row of the matrix must have the same size")
+    if len(matrix) > 1:
+        if len(matrix[0]) != len(matrix[1]):
+            raise TypeError("Each row of the matrix must have the same size")
     else:
         for lista in matrix:
             for elemento in lista:
