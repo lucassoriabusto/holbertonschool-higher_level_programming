@@ -5,11 +5,11 @@ Don't mess with John Wick
 
 >>> text_indentation("Nema? John Wick. Age: 58")
 Nema?
-
+<BLANKLINE>
 John Wick.
-
+<BLANKLINE>
 Age:
-
+<BLANKLINE>
 58
 
 >>> text_indentation(2)
