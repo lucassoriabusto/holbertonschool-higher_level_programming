@@ -14,10 +14,10 @@ def matrix_divided(matrix, div):
                 if type(elemento) != int and type(elemento) != float:
                     raise TypeError("matrix must be a matrix "
                                     "(list of lists) of integers/floats")
-    if type(div) != int and type(div) != float:
-        raise TypeError("div must be a number")
-    if div == 0:
-        raise ZeroDivisionError("division by zero")
+        if type(div) != int and type(div) != float:
+            raise TypeError("div must be a number")
+        if div == 0:
+            raise ZeroDivisionError("division by zero")
     new_matrix = []
     for fila in matrix:
         new_fila = []
