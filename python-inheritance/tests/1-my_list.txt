@@ -22,6 +22,6 @@
 >>> my_list.print_sorted()
 [-5, -4, -3, -2, -1]
 
->>> my_list = MyList()
->>> my_list.print_sorted()
+>>> my_list_1 = MyList()
+>>> my_list_1.print_sorted()
 []
