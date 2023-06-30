@@ -86,15 +86,22 @@ class Rectangle(Base):
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
 {self.width}/{self.height}")
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """enumerate() iterar sobre una secuencia y proporcionar tanto el
         índice como el valor correspondiente en cada iteración.
 
         setattr() establece el valor de un atributo en un objeto.
         Toma tres argumentos: el objeto al que asignar el atributo,
         el nombre del atributo y el valor a asignar.
+
+        items() devuelve una vista iterable de los pares clave-valor
+        del diccionario en forma de tuplas.
         """
-        attributes = ['id', 'width', 'height', 'x', 'y']
-        for i, arg in enumerate(args):
-            if i < len(attributes):
-                setattr(self, attributes[i], arg)
+        if args:
+            attributes = ['id', 'width', 'height', 'x', 'y']
+            for i, arg in enumerate(args):
+                if i < len(attributes):
+                    setattr(self, attributes[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
