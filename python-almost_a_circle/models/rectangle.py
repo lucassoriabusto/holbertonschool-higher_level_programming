@@ -85,3 +85,16 @@ class Rectangle(Base):
     def __str__(self):
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
 {self.width}/{self.height}")
+
+    def update(self, *args):
+        """enumerate() iterar sobre una secuencia y proporcionar tanto el
+        índice como el valor correspondiente en cada iteración.
+
+        setattr() establece el valor de un atributo en un objeto.
+        Toma tres argumentos: el objeto al que asignar el atributo,
+        el nombre del atributo y el valor a asignar.
+        """
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        for i, arg in enumerate(args):
+            if i < len(attributes):
+                setattr(self, attributes[i], arg)
