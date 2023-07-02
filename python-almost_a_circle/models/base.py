@@ -78,3 +78,25 @@ class Base:
 
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """Lee el contenido de un archivo JSON, convierte los datos
+        en instancias de la clase correspondiente utilizando el
+        método create(), y devuelve una lista con las instancias
+        cargadas desde el archivo."""
+        class_name = cls.__name__
+        filename = f"{class_name}.json"
+
+        with open(filename, encoding="utf-8") as f:
+            json_string = f.read()
+
+        """Convierte la cadena JSON en una lista de diccionarios."""
+        obj_dicts = cls.from_json_string(json_string)
+
+        instances = []
+        for obj_dict in obj_dicts:
+            instance = cls.create(**obj_dict)
+            instances.append(instance)
+
+        return instances
