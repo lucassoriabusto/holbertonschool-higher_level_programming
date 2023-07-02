@@ -48,3 +48,11 @@ class Base:
         json_string = cls.to_json_string(obj_dicts)
         with open(filename, "w") as file:
             file.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """c"""
+        if json_string is None:
+            return []
+        else:
+            return json.loads(json_string)
