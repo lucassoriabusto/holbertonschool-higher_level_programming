@@ -51,8 +51,30 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """c"""
+        """Returns the list represented by the JSON string json_string."""
         if json_string is None:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Crea una instancia con atributos ya establecidos.
+        **dictionary: Un diccionario con los valores de los atributos.
+
+        Comprobar el nombre de la clase para determinar
+        qué tipo de instancia crear.
+
+        Crea una instancia "dummy" con valores iniciales (ancho=2 y altura=1)
+        y el método update() para asignar los valores del diccionario
+        a los atributos de la instancia."""
+
+        if cls.__name__ == "Rectangle":
+            dummy = cls(2, 1)
+        elif cls.__name__ == "Square":
+            dummy = cls(1)
+        else:
+            dummy = None
+
+        dummy.update(**dictionary)
+        return dummy
