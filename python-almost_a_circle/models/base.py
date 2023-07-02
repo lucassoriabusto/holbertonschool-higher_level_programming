@@ -3,6 +3,7 @@
 
 
 import json
+import os
 
 
 class Base:
@@ -87,6 +88,9 @@ class Base:
         cargadas desde el archivo."""
         class_name = cls.__name__
         filename = f"{class_name}.json"
+
+        if not os.path.exists(filename):
+            return []
 
         with open(filename, encoding="utf-8") as f:
             json_string = f.read()
