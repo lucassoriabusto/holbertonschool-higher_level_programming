@@ -15,7 +15,7 @@ Pycodestyle is now the new standard of Python style code
 
 Write a Python script that prints exactly `"Programming is like building a multilingual puzzle"`, followed by a new line.
 
-- Use the `print` function.
+- Use the function `print`.
 
 ```
 guillaume@ubuntu:~/py/$ ./2-print.py
@@ -23,20 +23,20 @@ guillaume@ubuntu:~/py/$ ./2-print.py
 guillaume@ubuntu:~/py/$
 ```
 ### Repo:
-- GitHub repository: holbertonschool-higher_level_programming
-- Directory: python-hello_world
-- File: 2-print.py
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `python-hello_world`
+- File: `2-print.py`
 
 ---
 
 ## 1. Print integer
 
-Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
-- You can find the source code here
+Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/3-print_number.py) in order to print the integer stored in the variable `number`, followed by `Battery street`, followed by a new line.
+- You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/master/3-print_number.py)
 - The output of the script should be:
-  - the number, followed by Battery street,
+  - the number, followed by `Battery street`,
   - followed by a new line
-- You are not allowed to cast the variable number into a string
+- You are not allowed to cast the variable `number` into a string
 - Your code must be 3 lines long
 - You have to use f-strings tips
 
@@ -47,21 +47,21 @@ guillaume@ubuntu:~/py/0x00$
 ```
 
 ### Repo:
-- GitHub repository: holbertonschool-higher_level_programming
-- Directory: python-hello_world
-- File: 3-print_number.py
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `python-hello_world`
+- File: `3-print_number.py`
 
 ---
 
 ## 2. Print float
 
-Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
+Complete the source code in order to print the float stored in the variable `number` with a precision of 2 digits.
 
-- You can find the source code here
+- You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/master/4-print_float.py)
 - The output of the program should be:
-  - Float:, followed by the float with only 2 digits
+  - Float:, followed by the `float` with only 2 digits
   - followed by a new line
--You are not allowed to cast number to string
+-You are not allowed to cast `number` to string
 -You have to use f-strings
 
 ```
@@ -71,21 +71,21 @@ guillaume@ubuntu:~/py/0x00$
 ```
 
 ### Repo:
-- GitHub repository: holbertonschool-higher_level_programming
-- Directory: python-hello_world
-- File: 4-print_float.py
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `python-hello_world`
+- File: `4-print_float.py`
 
 ---
 
 ## 3. Print string
 
-Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+Complete this [source code](https://github.com/hs-hq/0x00.py/blob/master/5-print_string.py) in order to print 3 times a string stored in the variable `str`, followed by its first 9 characters.
 
-- You can find the source code here
+- You can find the source code [here](https://github.com/hs-hq/0x00.py/blob/master/5-print_string.py)
 - The output of the program should be:
-  - 3 times the value of str
+  - 3 times the value of `str`
   - followed by a new line
-  - followed by the 9 first characters of str
+  - followed by the 9 first characters of `str`
   - followed by a new line
 You are not allowed to use any loops or conditional statement
 Your program should be maximum 5 lines long
@@ -98,9 +98,9 @@ guillaume@ubuntu:~/py/$
 ```
 
 ### Repo:
-- GitHub repository: holbertonschool-higher_level_programming
-- Directory: python-hello_world
-- File: 5-print_string.py
+- GitHub repository: `holbertonschool-higher_level_programming`
+- Directory: `python-hello_world`
+- File: `5-print_string.py`
 
 ---
 
