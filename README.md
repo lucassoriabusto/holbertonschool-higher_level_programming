@@ -9,7 +9,7 @@
 **3 -**  
 **4 -**  
 **5 -** **[python-hello_world](https://github.com/lucassoriabusto/holbertonschool-higher_level_programming/tree/master/python-hello_world)**  
-**6 -**  
+**6 -** **[Python - if/else, loops, functions](https://github.com/lucassoriabusto/holbertonschool-higher_level_programming/tree/master/python-if_else_loops_functions)**  
 **7 -**  
 **8 -**  
 **9 -**  
