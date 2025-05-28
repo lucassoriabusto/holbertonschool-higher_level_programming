@@ -61,8 +61,8 @@ Complete the source code in order to print the float stored in the variable `num
 - The output of the program should be:
   - Float:, followed by the `float` with only 2 digits
   - followed by a new line
--You are not allowed to cast `number` to string
--You have to use f-strings
+- You are not allowed to cast `number` to string
+- You have to use f-strings
 
 ```
 guillaume@ubuntu:~/py/0x00$ ./4-print_float.py
